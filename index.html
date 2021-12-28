@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Customer Registration</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+        <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            html, body {
+                font-family: Rubik;
+                font-size: 20px;
+                text-align: center;
+                background: url(images/bg.jpg) no-repeat center center fixed;;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+
+            .login-box {
+                transform: translateY(10%);
+                margin-left: auto;
+                margin-right: auto;
+                width: 480px;
+                height: 650px;
+                background: white;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+
+            .reg {
+                font-size: 17px;
+            }
+
+            #small {
+                width: 25%;
+                
+            }
+
+            #btn {
+                background-image: linear-gradient(to right, #499CE8 0%, #9733EE  51%, #DA22FF  100%);
+                color: white;
+                font-family: Rubik;
+                height: 120%;
+                width: auto;
+            }
+
+            .reg-text {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="login-box">
+            <h2 style="transform: translateY(50%); font-size: 30px;">Customer Registration Form</h2>
+            <br>
+            <div class="reg-text">
+                Welcome to the customer registration form! Make sure to fill out the following sections in order to register.
+            </div>
+            <br>
+            <form class="reg" action="part2.pl" method="post">
+                <br>
+                First Name: <input required type="text" name="fName" placeholder="Enter your first name...">
+                <br>
+                <br>
+                Last Name: <input required type="text" name="lName" placeholder="Enter your last name...">
+                <br>
+                <br>
+                Country: <input required type="text" name="country" placeholder="Enter your country...">
+                <br>
+                <br>
+                Province: <select required name="province">
+                    <option value="AB">AB</option>
+                    <option value="BC">BC</option>
+                    <option value="MB">MB</option>
+                    <option value="NB">NB</option>
+                    <option value="NL">NL</option>
+                    <option value="NS">NS</option>
+                    <option value="NT">NT</option>
+                    <option value="NU">NU</option>
+                    <option value="ON">ON</option>
+                    <option value="PE">PE</option>
+                    <option value="QC">QC</option>
+                    <option value="SK">SK</option>
+                    <option value="YT">YT</option>
+                </select>
+                Street Address: <input required type="text" name="street" placeholder="Enter your street address...">
+                <br>
+                <br>
+                City: <input id="small" required type="text" name="city" placeholder="Enter your city...">
+                &nbsp Postal: <input id="small" required type="text" name="postalCode" placeholder="Enter your postal...">
+                <br>
+                <br>
+                Gender: <input id="check" required type="radio" name="gender" value="Male">Male 
+                <input id="check" required type="radio" name="gender" value="Female">Female
+                <input id="check" required type="radio" name="gender" value="Other">Prefer not to say
+                <br>
+                <br>
+                Phone: <input required type="text" name="phone" placeholder="Enter your phone number...">
+                <br>
+                <br>
+                Email: <input required type="text" name="email" placeholder="Enter your email address...">
+                <br>
+                <br>
+                Password: <input required type="password" name="pw" placeholder="Create your password...">
+                <br>
+                <br>
+                <input id="btn" type="submit" value="Sign up!">
+            </form>
+
+        </div>
+
+    </body>
+</html>
